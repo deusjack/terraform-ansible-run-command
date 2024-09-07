@@ -1,6 +1,6 @@
 resource "ansible_playbook" "transactional_update_run" {
   name                    = var.hostname
-  playbook                = "${path.module}/transactional_update_run.yaml"
+  playbook                = "${path.module}/run_command.yaml"
   replayable              = false
   ignore_playbook_failure = false
   extra_vars = {
