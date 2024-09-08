@@ -32,7 +32,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [ansible_playbook.transactional_update_run](https://registry.terraform.io/providers/ansible/ansible/latest/docs/resources/playbook) | resource |
+| [ansible_playbook.run_command](https://registry.terraform.io/providers/ansible/ansible/latest/docs/resources/playbook) | resource |
 | [null_resource.external](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [null_resource.run_command](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [null_resource.variables](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
@@ -47,5 +47,10 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_stderr"></a> [stderr](#output\_stderr) | n/a |
+| <a name="output_stderr_lines"></a> [stderr\_lines](#output\_stderr\_lines) | n/a |
+| <a name="output_stdout"></a> [stdout](#output\_stdout) | n/a |
+| <a name="output_stdout_lines"></a> [stdout\_lines](#output\_stdout\_lines) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

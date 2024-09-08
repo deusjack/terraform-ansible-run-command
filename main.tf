@@ -1,4 +1,4 @@
-resource "ansible_playbook" "transactional_update_run" {
+resource "ansible_playbook" "run_command" {
   name                    = var.hostname
   playbook                = "${path.module}/run_command.yaml"
   replayable              = false
