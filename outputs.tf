@@ -5,7 +5,7 @@ locals {
 /usr/lib/python3.11/site-packages/paramiko/transport.py:259: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from this module in 48.0.0.
   "class": algorithms.TripleDES,
 EOT
-  playbook_stdout = one(one(jsondecode(replace(ansible_playbook.run_command.ansible_playbook_stdout, local.bug_string, "")).plays).tasks).hosts[var.hostname]
+  playbook_stdout = one(jsondecode(replace(ansible_playbook.run_command.ansible_playbook_stdout, local.bug_string, "")).plays).tasks[0].hosts[var.hostname]
 }
 
 output "stdout" {
