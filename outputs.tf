@@ -23,3 +23,7 @@ output "stdout_lines" {
 output "stderr_lines" {
   value = local.playbook_stdout.stderr_lines
 }
+
+output "command" {
+  value = var.command
+}

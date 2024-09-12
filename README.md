@@ -49,6 +49,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_command"></a> [command](#output\_command) | n/a |
 | <a name="output_stderr"></a> [stderr](#output\_stderr) | n/a |
 | <a name="output_stderr_lines"></a> [stderr\_lines](#output\_stderr\_lines) | n/a |
 | <a name="output_stdout"></a> [stdout](#output\_stdout) | n/a |
