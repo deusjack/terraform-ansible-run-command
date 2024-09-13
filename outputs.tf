@@ -8,6 +8,12 @@ EOT
   playbook_stdout = one(jsondecode(replace(ansible_playbook.run_command.ansible_playbook_stdout, local.bug_string, "")).plays).tasks[0].hosts[var.hostname]
 }
 
+output "triggers" {
+  value = {
+    playbook = ansible_playbook.run_command.id
+  }
+}
+
 output "stdout" {
   value = local.playbook_stdout.stdout
 }
