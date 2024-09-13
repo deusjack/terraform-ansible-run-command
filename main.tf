@@ -9,7 +9,8 @@ resource "ansible_playbook" "run_command" {
   lifecycle {
     replace_triggered_by = [
       null_resource.run_command,
-      null_resource.variables
+      null_resource.variables,
+      null_resource.external
     ]
   }
 }
